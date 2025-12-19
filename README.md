@@ -52,7 +52,7 @@ Average Monthly Income
 
 ## Power BI Dashboard
 
-[![Employee Attrition Dashboard](screenshots/dashboard_overview.png)](screenshots/dashboard_overview.png)
+[![Employee Attrition Dashboard](dashboard_overview.png)](dashboard_overview.png)
 
 Interactive Power BI dashboard with KPIs, department-wise attrition, job role analysis, and slicers for dynamic filtering.
 
