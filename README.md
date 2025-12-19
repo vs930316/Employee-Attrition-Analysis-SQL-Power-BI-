@@ -1,45 +1,46 @@
-# Employee Attrition Analysis (SQL & Power BI)
+## Employee Attrition Analysis (SQL & Power BI)
+## Project Overview
 
-# Project Overview
+Employee attrition is a major challenge for organizations.
+This project analyzes employee attrition patterns to identify key factors influencing employee turnover and provide actionable insights using SQL and Power BI.
 
-Employee attrition is a critical challenge for organizations.
-This project analyzes employee attrition patterns to identify key factors influencing employee turnover and provide actionable business insights using SQL and Power BI.
-
-# Objective
+## Objective
 
 Analyze employee attrition trends across departments and job roles
 
-Identify key drivers of attrition such as overtime, income, and role
+Identify key drivers of attrition such as overtime and income
 
-Build an interactive dashboard to support HR decision-making
+Build an interactive Power BI dashboard for HR decision-making
 
-# Dataset
+## Dataset
 
 Source: IBM HR Analytics Employee Attrition Dataset (Kaggle)
 
 Records: 1,470 employees
 
-Key Fields: Department, JobRole, MonthlyIncome, OverTime, Attrition
+Key Columns: Department, JobRole, MonthlyIncome, OverTime, Attrition
 
-# Tools & Technologies
+## Tools & Technologies
 
 Database: PostgreSQL
+
+SQL Execution: pgAdmin / psql
 
 Visualization: Power BI
 
 Data Format: CSV
 
-# Data Processing (SQL)
+## Data Processing (SQL)
 
-Imported CSV data into PostgreSQL
+Imported CSV data into PostgreSQL using COPY command
 
-Handled data type mismatches from CSV ingestion
+Validated and cleaned categorical and numeric columns
 
-Cleaned and transformed text and numeric fields
+Ensured correct data types for analysis
 
-Created aggregations for analysis and reporting
+Performed aggregations for KPI and attrition analysis
 
-# Key KPIs
+## Key KPIs
 
 Total Employees
 
@@ -49,15 +50,21 @@ Attrition Rate (%)
 
 Average Monthly Income
 
-# Dashboard Features (Power BI)
+## Power BI Dashboard
 
-Executive KPI cards
+[![Employee Attrition Dashboard](screenshots/dashboard_overview.png)](screenshots/dashboard_overview.png)
+
+Interactive Power BI dashboard with KPIs, department-wise attrition, job role analysis, and slicers for dynamic filtering.
+
+ ## Dashboard Features
+
+KPI cards for high-level metrics
 
 Attrition distribution (Yes / No)
 
 Attrition by department and job role
 
-Income analysis by job role
+Average monthly income by job role
 
 Interactive slicers for:
 
@@ -67,48 +74,48 @@ Job Role
 
 OverTime
 
-# Key Insights
+## Key Insights
 
 Overall attrition rate is approximately 16%
 
-Sales and Research departments show the highest attrition
+Sales and Research departments show higher attrition
 
 Employees working overtime have significantly higher attrition
 
-Lower income bands experience higher employee turnover
+Lower income bands experience increased employee turnover
 
-# Business Recommendations
+## Business Recommendations
 
 Reduce overtime workload in high-attrition departments
 
-Review compensation strategies for lower income roles
+Review compensation strategy for lower income roles
 
-Focus retention programs on high-risk job roles
+Implement early-tenure retention programs
 
-# Project Structure
+## Project Structure
+```
 Employee-Attrition-Analysis/
-│
 ├── sql/
 │   └── employee_attrition_analysis.sql
-│
 ├── powerbi/
 │   └── employee_attrition_dashboard.pbix
-│
 ├── dataset/
 │   └── HR_Employee_Attrition.csv
-│
+├── screenshots/
+│   └── dashboard_overview.png
 └── README.md
+```
 
-# Skills Demonstrated
+## Skills Demonstrated
 
-SQL data cleaning and transformation
+SQL data cleaning and aggregation
 
-Analytical thinking and KPI design
+KPI design and business analysis
 
-Interactive dashboard development
+Interactive Power BI dashboard development
 
-Business-focused data storytelling
+Data storytelling and insight generation
 
-# Conclusion
+## Conclusion
 
 This project demonstrates an end-to-end data analytics workflow, from raw data ingestion and SQL analysis to interactive Power BI visualization and business insight generation.
